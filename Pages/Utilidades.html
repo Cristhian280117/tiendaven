@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="estilos.css">
+
+<script>
+  
+      function operacion(){
+      
+        var c1 = document.getElementById('c1').value;
+        var c2 = document.getElementById('c2').value;
+        var c3 = document.getElementById('c3').value;
+          
+        var resultado = parseInt(c1 + c2) * c3;
+          
+        document.getElementById('resultado').innerHTML = resultado + " ohmios";
+
+      }
+  
+  </script>
+
+</head>
+<body>
+	<body style="background-color:#DAD9EE;">
+<header>
+	<div class="container">
+			<center><h1><b>Tesla Electronics</b></h1>
+				</center>
+	</div>
+	
+
+	
+</header>
+
+
+<h2>
+	<center>
+		<b>
+			Calcular Valor de Venta
+		</b>
+	</center>
+</h2>
+
+<form class="form-horizontal" action="">
+  <div class="form-group">
+
+  	
+     <center>
+    <label class="control-label col-sm-5" for="ValorCompra"><b>Valor De La Compra $</b></label>
+    <div class="col-sm-4">
+      <input type="value" class="form-control" id="ValorCompra" placeholder="Valor De La Compra">
+    </div>
+  </div>
+ </center>
+
+  <div class="form-group">
+
+  		
+  	<center>
+    <label class="control-label col-sm-5" for="Utld"><b>% Utilidad o Ganancia %</b></label>
+    <div class="col-sm-4">
+      <input type="value" class="form-control" id="Utld" placeholder="Utilidad o Ganancia %">
+    </div>
+  </div>
+  </center>
+
+  <div class="form-group">
+  		
+  	<center>
+    <label class="control-label col-sm-5" for="Utld"><b>IVA</b></label>
+    <div class="col-sm-4">
+      <input type="value" class="form-control" id="Utld" placeholder="Ingresar IVA %">
+
+    </div>
+  </div>
+  </center>
+
+
+
+ <center>
+<a href="#" class="btn btn-success">Calcular</a>
+  </center>
+
+<br>
+<center>
+  <div class="form-group">
+    <label class="control-label col-sm-5" for="Utld"><b>Valor de Venta $</b></label>    
+  	<article class="col-md-4">
+      <input type="value" class="form-control" id="Utld" placeholder="0">
+    </div>
+  </div>
+
+
+  </center>
+<center>
+  <div class="form-group">
+    <label class="control-label col-sm-5" for="Utld"><b>Ganancias $</b></label>
+    <div class="col-sm-4">
+      <input type="value" class="form-control" id="Utld" placeholder="0">
+    </div>
+  </div>
+</center>
+
+<div class="tabla texto">
+    <center>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+              
+                    <th scope="col" colspan="2"><H2 class="text-center tituloNegro"><b>Calculadora de Resistencias</H2></th></b>
+     </center>
+                </tr>
+              </thead>
+                <tbody>
+                                
+                <tr>
+                  
+                    <td colspan="2">
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <label class="input-group-text texto" for="c1">1° BANDA</label>
+                          </div>
+                        <select id="c1" class="custom-select texto"> 
+                            <option value="0">Negro</option>
+                            <option value="1">Cafe</option>
+                            <option value="2">Rojo</option>
+                            <option value="3">Naranja</option>
+                            <option value="4">Amarillo</option>
+                            <option value="5">Verde</option>
+                            <option value="6">Azul</option>
+                            <option value="7">Violeta</option>
+                            <option value="8">Gris</option>
+                            <option value="9">Blanco</option>
+                        </select>
+                            </div>
+                            </td>
+                     
+
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <label class="input-group-text texto" for="c2">2° BANDA</label>
+                          </div>
+                            <select id="c2" class="custom-select texto"> 
+                            <option value="0">Negro</option>
+                            <option value="1">Cafe</option>
+                            <option value="2">Rojo</option>
+                            <option value="3">Naranja</option>
+                            <option value="4">Amarillo</option>
+                            <option value="5">Verde</option>
+                            <option value="6">Azul</option>
+                            <option value="7">Violeta</option>
+                            <option value="8">Gris</option>
+                            <option value="9">Blanco</option>
+                        </select></div></td>
+                </tr>
+                <tr>
+                      <td colspan="2">
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <label class="input-group-text texto" for="c3">2° BANDA</label>
+                          </div>
+                            <select id="c3" class="custom-select texto"> 
+                            <option value="1">Negro</option>
+                            <option value="10">Cafe</option>
+                            <option value="100">Rojo</option>
+                            <option value="1000">Naranja</option>
+                            <option value="10000">Amarillo</option>
+                            <option value="100000">Verde</option>
+                            <option value="10000000">Azul</option>
+                            <option value="100000000">Violeta</option>
+                            <option value="1000000000">Gris</option>
+                            <option value="10000000000">Blanco</option>
+                        </select></div></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="text-center"><button type="button" class="btn btn-primary texto" onclick="operacion()" id="ejecutar">CALCULAR RESISTENCIA</button></td>
+                </tr>
+                <tr class="text-center texto">
+                    <td><b>Resultado:</b></td>
+                    <td><div id="resultado"> </div></td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <center>
+
+          <a href="../index.html"> <p align=center> <img src="../imagenes/computador1.JPG" width="50" height="50" name="Inicio"> </p> </a>
+
+  </center>
+
+
+  
+
+ 
+
+</form>
+
+</body>
+</html>
